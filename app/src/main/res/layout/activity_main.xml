@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+       />
+
+    <Spinner
+        android:id="@+id/spinner_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/subjects_array" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender:"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"/>
+        <RadioButton
+            android:id="@+id/radio_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qualifications:"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_bachelor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bachelor"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_master"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Master"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_phd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHD"/>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+</LinearLayout>
